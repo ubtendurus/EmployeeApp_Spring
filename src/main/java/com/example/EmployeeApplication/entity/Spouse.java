@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Table(name = "spouse")
 public class Spouse {
 
-    @Id
+    @Id//id generator AI
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;

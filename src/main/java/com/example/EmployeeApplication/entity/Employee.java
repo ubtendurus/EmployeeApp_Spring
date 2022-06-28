@@ -6,6 +6,7 @@ import javax.persistence.*;
 
 @Entity
 public class Employee {
+    //id generator AI
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int employeeID;
