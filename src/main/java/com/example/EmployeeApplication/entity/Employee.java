@@ -1,9 +1,8 @@
 package com.example.EmployeeApplication.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.*;
 
 @Entity
 public class Employee {
@@ -12,6 +11,10 @@ public class Employee {
     int employeeID;
     String employeeName;
     String employeeCity;
+
+    @OneToOne
+    @JoinColumn(name = "fk_spouse")
+    private Spouse spouse;
 
     public Employee() {
     }
@@ -44,5 +47,13 @@ public class Employee {
 
     public void setEmployeeCity(String employeeCity) {
         this.employeeCity = employeeCity;
+    }
+
+    public Spouse getSpouse() {
+        return spouse;
+    }
+
+    public void setSpouse(Spouse spouse) {
+        this.spouse = spouse;
     }
 }
