@@ -1,0 +1,38 @@
+{
+   "employeeId":1,
+   "employeeName":"First Employee",
+   "employeeCity":"Washington",
+   "spouse":{
+      "name":"First Employee spouse",
+      "mobileNo":"123456789",
+      "age":"29"
+   },
+   "addresses":[
+      {
+         "line1":"line1",
+         "line2":"line2",
+         "zipCode":"zipCode",
+         "city":"city",
+         "state":"state",
+         "country":"country"
+      },
+      {
+         "line1":"line1",
+         "line2":"line2",
+         "zipCode":"zipCode",
+         "city":"city",
+         "state":"state",
+         "country":"country"
+      }
+   ],
+   "projects":[
+      {
+         "name":"name1",
+         "clientName":"clientName1"
+      },
+      {
+         "name":"name2",
+         "clientName":"clientName2"
+      }
+   ]
+}
